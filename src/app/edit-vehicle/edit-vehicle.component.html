@@ -1,0 +1,29 @@
+<h2>Editar vehiculo</h2>
+<div>
+  <mat-card>
+    <mat-card-title>Detalles del vehiculo</mat-card-title>
+    <mat-card-content>
+      <p>
+        <mat-form-field appearance="legacy">
+          <mat-label>Placa:</mat-label>
+          <input type="text" required matInput [(ngModel)]="vehicleExpense.vehicle.plate" id="plate">
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="legacy">
+          <mat-label>Modelo:</mat-label>
+          <input type="text" required matInput [(ngModel)]="vehicleExpense.vehicle.model" id="model">
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="legacy">
+          <mat-label>Tipo:</mat-label>
+          <input type="text" required matInput [(ngModel)]="vehicleExpense.vehicle.type" id="type">
+        </mat-form-field>
+      </p>
+      <p>
+        <button type="button" mat-raised-button color="primary" (click)="update()">Guardar</button>
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>

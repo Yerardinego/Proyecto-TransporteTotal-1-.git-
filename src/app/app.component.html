@@ -1,0 +1,20 @@
+
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-icon-button>
+      <mat-icon >menu</mat-icon>
+    </button>
+    <h1>Transporte Total®</h1>
+    <span class="menu-spacer"></span>
+    <div>
+      <a mat-button [routerLink]="'/vehicle-expenses'"> Gastos </a>
+      <a mat-button [routerLink]="'/vehicle-trips'"> Viajes </a>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
+<h1>Bienvenido a Transporte total!</h1>
+
+<router-outlet></router-outlet>
+
